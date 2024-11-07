@@ -28,6 +28,7 @@ namespace IncomeExpenseTrackSystemCourseWork
             List<CategoryData> listData = cData.categoryListData();
 
             dataGridView1.DataSource = listData;
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -59,6 +60,8 @@ namespace IncomeExpenseTrackSystemCourseWork
                             cmd.Parameters.AddWithValue("@status", category_status.SelectedItem);
 
                             cmd.ExecuteNonQuery();
+                            clearFields();
+
                             MessageBox.Show("Успешно обновлено", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                         connect.Close();
@@ -93,6 +96,8 @@ namespace IncomeExpenseTrackSystemCourseWork
                         cmd.Parameters.AddWithValue("@date", today);
 
                         cmd.ExecuteNonQuery();
+                        clearFields();
+
                         MessageBox.Show("Успешно добавлено", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     connect.Close();
@@ -101,14 +106,51 @@ namespace IncomeExpenseTrackSystemCourseWork
             displayCategoryList();
         }
 
+        public void clearFields()
+        {
+            category_category.Text = "";
+            category_type.SelectedIndex = -1;
+            category_status.SelectedIndex = -1;
+        }
         private void category_clearBtn_Click(object sender, EventArgs e)
         {
-
+            clearFields();
         }
 
         private void category_deleteBtn_Click(object sender, EventArgs e)
         {
+            if (category_category.Text == "" || category_type.SelectedIndex == -1 || category_status.SelectedIndex == -1)
+            {
+                MessageBox.Show("Пожалуйста выберите элементы для обновления", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                if (MessageBox.Show("Вы уверены, что хотите удалить ID: " + getID + "?", "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    using (SqlConnection connect = new SqlConnection(stringConnection))
+                    {
+                        connect.Open();
 
+                        string deleteData = "DELETE FROM categories WHERE id = @id";
+
+                        using (SqlCommand cmd = new SqlCommand(deleteData, connect))
+                        {
+                            cmd.Parameters.AddWithValue("@id", getID);
+                            cmd.Parameters.AddWithValue("@cat", category_category.Text.Trim());
+                            cmd.Parameters.AddWithValue("@type", category_type.SelectedItem);
+                            cmd.Parameters.AddWithValue("@status", category_status.SelectedItem);
+
+                            cmd.ExecuteNonQuery();
+                            clearFields();
+
+                            MessageBox.Show("Успешно удалено", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        connect.Close();
+                    }
+                }
+
+            }
+            displayCategoryList();
         }
 
         private int getID = 0;

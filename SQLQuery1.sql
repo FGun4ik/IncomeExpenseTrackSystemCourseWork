@@ -16,3 +16,5 @@ CREATE TABLE categories(
 )
 
 SELECT * FROM categories
+
+DELETE FROM categories WHERE ID = 1
