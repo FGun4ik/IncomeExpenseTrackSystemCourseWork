@@ -22,6 +22,17 @@ namespace IncomeExpenseTrackSystemCourseWork
             displayCategoryList();
         }
 
+        public void refreshData()
+        {
+            if (InvokeRequired)
+            {
+                Invoke((MethodInvoker)refreshData);
+                return;
+            }
+
+            displayCategoryList();
+        }
+
         public void displayCategoryList()
         {
             CategoryData cData = new CategoryData();

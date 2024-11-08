@@ -139,12 +139,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Add_1.png" />
+    <Content Include="Assets\Bill.png" />
+    <Content Include="Assets\Coins.png" />
     <Content Include="Assets\Dashboard.png" />
+    <Content Include="Assets\Exchange Ruble.png" />
     <Content Include="Assets\Expense.png" />
+    <Content Include="Assets\Expense_1.png" />
+    <Content Include="Assets\Financial Decline.png" />
+    <Content Include="Assets\Financial Success.png" />
     <Content Include="Assets\Income_1.png" />
+    <Content Include="Assets\Income_2.png" />
     <Content Include="Assets\Logout_1.png" />
     <Content Include="Assets\Man Holding Bags With Money Skin Type 3.png" />
     <Content Include="Assets\Man Holding Bags With Money Skin Type 3_1.png" />
+    <Content Include="Assets\Money Bag Ruble.png" />
+    <Content Include="Assets\Pass Money.png" />
+    <Content Include="Assets\Split Money.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

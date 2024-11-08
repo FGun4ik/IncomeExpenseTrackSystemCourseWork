@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -73,12 +74,12 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.label20 = new System.Windows.Forms.Label();
+            this.totalIncome = new System.Windows.Forms.Label();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label24 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.label22 = new System.Windows.Forms.Label();
+            this.totalExpenses = new System.Windows.Forms.Label();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -172,6 +173,7 @@
             // 
             // pictureBox5
             // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(16, 15);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(60, 60);
@@ -223,6 +225,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(15, 15);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(60, 60);
@@ -272,6 +275,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(15, 15);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(60, 60);
@@ -314,6 +318,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(14, 15);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(60, 60);
@@ -379,6 +384,7 @@
             // 
             // pictureBox13
             // 
+            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
             this.pictureBox13.Location = new System.Drawing.Point(17, 15);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(60, 60);
@@ -429,6 +435,7 @@
             // 
             // pictureBox11
             // 
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
             this.pictureBox11.Location = new System.Drawing.Point(16, 15);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(60, 60);
@@ -479,6 +486,7 @@
             // 
             // pictureBox9
             // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
             this.pictureBox9.Location = new System.Drawing.Point(15, 15);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(60, 60);
@@ -530,6 +538,7 @@
             // 
             // pictureBox7
             // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(14, 15);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(60, 60);
@@ -566,26 +575,27 @@
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.SeaGreen;
-            this.panel13.Controls.Add(this.label20);
+            this.panel13.Controls.Add(this.totalIncome);
             this.panel13.Controls.Add(this.pictureBox15);
             this.panel13.Location = new System.Drawing.Point(12, 47);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(524, 151);
             this.panel13.TabIndex = 2;
             // 
-            // label20
+            // totalIncome
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(93, 15);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(25, 25);
-            this.label20.TabIndex = 6;
-            this.label20.Text = "0";
+            this.totalIncome.AutoSize = true;
+            this.totalIncome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.totalIncome.ForeColor = System.Drawing.Color.White;
+            this.totalIncome.Location = new System.Drawing.Point(93, 15);
+            this.totalIncome.Name = "totalIncome";
+            this.totalIncome.Size = new System.Drawing.Size(25, 25);
+            this.totalIncome.TabIndex = 6;
+            this.totalIncome.Text = "0";
             // 
             // pictureBox15
             // 
+            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
             this.pictureBox15.Location = new System.Drawing.Point(14, 15);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(60, 60);
@@ -614,26 +624,27 @@
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.SeaGreen;
-            this.panel14.Controls.Add(this.label22);
+            this.panel14.Controls.Add(this.totalExpenses);
             this.panel14.Controls.Add(this.pictureBox16);
             this.panel14.Location = new System.Drawing.Point(16, 47);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(524, 151);
             this.panel14.TabIndex = 3;
             // 
-            // label22
+            // totalExpenses
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(93, 15);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(25, 25);
-            this.label22.TabIndex = 6;
-            this.label22.Text = "0";
+            this.totalExpenses.AutoSize = true;
+            this.totalExpenses.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.totalExpenses.ForeColor = System.Drawing.Color.White;
+            this.totalExpenses.Location = new System.Drawing.Point(93, 15);
+            this.totalExpenses.Name = "totalExpenses";
+            this.totalExpenses.Size = new System.Drawing.Size(25, 25);
+            this.totalExpenses.TabIndex = 6;
+            this.totalExpenses.Text = "0";
             // 
             // pictureBox16
             // 
+            this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
             this.pictureBox16.Location = new System.Drawing.Point(14, 15);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(60, 60);
@@ -746,11 +757,11 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label totalIncome;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label totalExpenses;
         private System.Windows.Forms.PictureBox pictureBox16;
     }
 }

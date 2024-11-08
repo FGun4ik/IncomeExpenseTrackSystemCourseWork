@@ -15,6 +15,15 @@ namespace IncomeExpenseTrackSystemCourseWork
         public MainForm()
         {
             InitializeComponent();
+
+            displayUsername();
+        }
+
+        public void displayUsername()
+        {
+            string getUsername = Form1.username;
+
+            greetUser.Text = "Добро пожаловать, " + getUsername.Substring(0, 1).ToUpper() + getUsername.Substring(1) + "!";
         }
 
         private void close_Click(object sender, EventArgs e)
@@ -61,6 +70,12 @@ namespace IncomeExpenseTrackSystemCourseWork
             incomeForm1.Visible = false;
             expensesForm1.Visible = false;
 
+            Dashboard dForm = dashboard1 as Dashboard;
+
+            if(dForm != null)
+            {
+                dForm.refreshData();
+            }
         }
 
         private void addCategory_btn_Click(object sender, EventArgs e)
@@ -69,6 +84,13 @@ namespace IncomeExpenseTrackSystemCourseWork
             categoryForm1.Visible = true;
             incomeForm1.Visible = false;
             expensesForm1.Visible = false;
+
+            CategoryForm cForm = categoryForm1 as CategoryForm;
+
+            if(cForm != null)
+            {
+                cForm.refreshData();
+            }
         }
 
         private void income_btn_Click(object sender, EventArgs e)
@@ -77,6 +99,13 @@ namespace IncomeExpenseTrackSystemCourseWork
             categoryForm1.Visible = false;
             incomeForm1.Visible = true;
             expensesForm1.Visible = false;
+
+            IncomeForm iForm = incomeForm1 as IncomeForm;
+            
+            if(iForm != null)
+            {
+                iForm.refreshData();
+            }
         }
 
         private void expenses_btn_Click(object sender, EventArgs e)
@@ -85,6 +114,13 @@ namespace IncomeExpenseTrackSystemCourseWork
             categoryForm1.Visible = false;
             incomeForm1.Visible = false;
             expensesForm1.Visible = true;
+
+            ExpensesForm eForm = expensesForm1 as ExpensesForm;
+
+            if(eForm != null)
+            {
+                eForm.refreshData();
+            }
         }
     }
 }

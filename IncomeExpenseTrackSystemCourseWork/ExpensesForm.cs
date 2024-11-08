@@ -26,6 +26,18 @@ namespace IncomeExpenseTrackSystemCourseWork
 
         }
 
+        public void refreshData()
+        {
+            if (InvokeRequired)
+            {
+                Invoke((MethodInvoker)refreshData);
+                return;
+            }
+
+            displayCategyList();
+            displayExpenseData();
+        }
+
         public void displayExpenseData()
         {
             ExpensesData eData = new ExpensesData();

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data;
 using System.Data.SqlClient;
+using System.Net.NetworkInformation;
 
 namespace IncomeExpenseTrackSystemCourseWork
 {
@@ -55,6 +56,9 @@ namespace IncomeExpenseTrackSystemCourseWork
 
                     if(table.Rows.Count > 0)
                     {
+
+                        username = login_username.Text;
+
                         MessageBox.Show("Вы успешно вошли!", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                         MainForm mForm = new MainForm();
@@ -84,6 +88,7 @@ namespace IncomeExpenseTrackSystemCourseWork
             this.Hide();
         }
 
+        public static string username;
 
 
         private void login_username_TextChanged(object sender, EventArgs e)

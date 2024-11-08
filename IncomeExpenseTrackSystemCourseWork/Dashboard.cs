@@ -28,6 +28,29 @@ namespace IncomeExpenseTrackSystemCourseWork
             expensesYesterdayIncome();
             expensesThisMonth();
             expensesThisYear();
+            incometotalIncome();
+            expensesTotalExpense();
+
+        }
+
+        public void refreshData()
+        {
+            if(InvokeRequired)
+            {
+                Invoke((MethodInvoker)refreshData);
+                return;
+            }
+
+            incomeTodayIncome();
+            incomeYesterdayIncome();
+            incomeThisMonth();
+            incomeThisYear();
+            expensesTodayIncome();
+            expensesYesterdayIncome();
+            expensesThisMonth();
+            expensesThisYear();
+            incometotalIncome();
+            expensesTotalExpense();
         }
 
 
@@ -36,13 +59,13 @@ namespace IncomeExpenseTrackSystemCourseWork
 
         public void incomeTodayIncome()
         {
-            using(SqlConnection connect = new SqlConnection(stringConnection))
+            using (SqlConnection connect = new SqlConnection(stringConnection))
             {
                 connect.Open();
 
                 string query = "SELECT SUM(income) FROM income WHERE date_income = @date_in";
 
-                using(SqlCommand cmd = new SqlCommand(query,connect))
+                using (SqlCommand cmd = new SqlCommand(query, connect))
                 {
 
                     DateTime today = DateTime.Today;
@@ -50,7 +73,7 @@ namespace IncomeExpenseTrackSystemCourseWork
 
                     object result = cmd.ExecuteScalar();
 
-                    if(result != DBNull.Value)
+                    if (result != DBNull.Value)
                     {
                         decimal todayCost = Convert.ToDecimal(result);
 
@@ -66,17 +89,17 @@ namespace IncomeExpenseTrackSystemCourseWork
 
         public void incomeYesterdayIncome()
         {
-            using(SqlConnection connect = new SqlConnection(stringConnection))
+            using (SqlConnection connect = new SqlConnection(stringConnection))
             {
                 connect.Open();
 
                 string query = "SELECT SUM(income) FROM income WHERE CONVERT(DATE, date_income) = DATEADD(day,DATEDIFF(day, 0, GETDATE()), -1)";
 
-                using(SqlCommand cmd = new SqlCommand(query, connect))
+                using (SqlCommand cmd = new SqlCommand(query, connect))
                 {
                     object result = cmd.ExecuteScalar();
 
-                    if(result != DBNull.Value)
+                    if (result != DBNull.Value)
                     {
                         decimal yesterdayCost = Convert.ToDecimal(result);
 
@@ -162,6 +185,36 @@ namespace IncomeExpenseTrackSystemCourseWork
 
             }
         }
+
+        public void incometotalIncome()
+        {
+            using (SqlConnection connect = new SqlConnection(stringConnection))
+            {
+                connect.Open();
+
+                string query = "SELECT SUM(income) FROM income";
+
+                using (SqlCommand cmd = new SqlCommand(query, connect))
+                {
+
+                    DateTime today = DateTime.Today;
+                    
+
+                    object result = cmd.ExecuteScalar();
+
+                    if (result != DBNull.Value)
+                    {
+                        decimal totalCost = Convert.ToDecimal(result);
+
+                        totalIncome.Text = "₽" + totalCost.ToString("0.00");
+                    }
+                    else
+                    {
+                        totalIncome.Text = "₽0.00";
+                    }
+                }
+            }
+        } 
 
         //EXPENSES
 
@@ -291,6 +344,36 @@ namespace IncomeExpenseTrackSystemCourseWork
 
                 }
 
+            }
+        }
+
+        public void expensesTotalExpense()
+        {
+            using (SqlConnection connect = new SqlConnection(stringConnection))
+            {
+                connect.Open();
+
+                string query = "SELECT SUM(cost) FROM expenses";
+
+                using (SqlCommand cmd = new SqlCommand(query, connect))
+                {
+
+                    DateTime today = DateTime.Today;
+
+
+                    object result = cmd.ExecuteScalar();
+
+                    if (result != DBNull.Value)
+                    {
+                        decimal totalCost = Convert.ToDecimal(result);
+
+                        totalExpenses.Text = "₽" + totalCost.ToString("0.00");
+                    }
+                    else
+                    {
+                        totalExpenses.Text = "₽0.00";
+                    }
+                }
             }
         }
 

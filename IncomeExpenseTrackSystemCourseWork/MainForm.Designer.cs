@@ -39,13 +39,13 @@
             this.income_btn = new System.Windows.Forms.Button();
             this.addCategory_btn = new System.Windows.Forms.Button();
             this.dashboard_btn = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.greetUser = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.dashboard1 = new IncomeExpenseTrackSystemCourseWork.Dashboard();
             this.expensesForm1 = new IncomeExpenseTrackSystemCourseWork.ExpensesForm();
             this.incomeForm1 = new IncomeExpenseTrackSystemCourseWork.IncomeForm();
             this.categoryForm1 = new IncomeExpenseTrackSystemCourseWork.CategoryForm();
-            this.dashboard1 = new IncomeExpenseTrackSystemCourseWork.Dashboard();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -106,7 +106,7 @@
             this.panel2.Controls.Add(this.income_btn);
             this.panel2.Controls.Add(this.addCategory_btn);
             this.panel2.Controls.Add(this.dashboard_btn);
-            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.greetUser);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 50);
@@ -200,16 +200,16 @@
             this.dashboard_btn.UseVisualStyleBackColor = false;
             this.dashboard_btn.Click += new System.EventHandler(this.dashboard_btn_Click);
             // 
-            // label2
+            // greetUser
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(30, 132);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(154, 19);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Добро пожаловать,";
+            this.greetUser.AutoSize = true;
+            this.greetUser.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.greetUser.ForeColor = System.Drawing.Color.White;
+            this.greetUser.Location = new System.Drawing.Point(3, 132);
+            this.greetUser.Name = "greetUser";
+            this.greetUser.Size = new System.Drawing.Size(144, 18);
+            this.greetUser.TabIndex = 1;
+            this.greetUser.Text = "Добро пожаловать,";
             // 
             // pictureBox2
             // 
@@ -232,6 +232,13 @@
             this.panel3.Size = new System.Drawing.Size(1189, 740);
             this.panel3.TabIndex = 2;
             // 
+            // dashboard1
+            // 
+            this.dashboard1.Location = new System.Drawing.Point(0, 0);
+            this.dashboard1.Name = "dashboard1";
+            this.dashboard1.Size = new System.Drawing.Size(1189, 740);
+            this.dashboard1.TabIndex = 3;
+            // 
             // expensesForm1
             // 
             this.expensesForm1.Location = new System.Drawing.Point(0, 0);
@@ -252,13 +259,6 @@
             this.categoryForm1.Name = "categoryForm1";
             this.categoryForm1.Size = new System.Drawing.Size(1189, 740);
             this.categoryForm1.TabIndex = 0;
-            // 
-            // dashboard1
-            // 
-            this.dashboard1.Location = new System.Drawing.Point(0, 0);
-            this.dashboard1.Name = "dashboard1";
-            this.dashboard1.Size = new System.Drawing.Size(1189, 740);
-            this.dashboard1.TabIndex = 3;
             // 
             // MainForm
             // 
@@ -292,7 +292,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button dashboard_btn;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label greetUser;
         private System.Windows.Forms.Button expenses_btn;
         private System.Windows.Forms.Button income_btn;
         private System.Windows.Forms.Button addCategory_btn;
