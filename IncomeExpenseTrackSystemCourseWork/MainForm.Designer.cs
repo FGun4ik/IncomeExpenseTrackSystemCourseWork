@@ -42,8 +42,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.categoryForm1 = new IncomeExpenseTrackSystemCourseWork.CategoryForm();
             this.incomeForm1 = new IncomeExpenseTrackSystemCourseWork.IncomeForm();
+            this.categoryForm1 = new IncomeExpenseTrackSystemCourseWork.CategoryForm();
+            this.expensesForm1 = new IncomeExpenseTrackSystemCourseWork.ExpensesForm();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -216,6 +217,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.expensesForm1);
             this.panel3.Controls.Add(this.incomeForm1);
             this.panel3.Controls.Add(this.categoryForm1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -224,6 +226,13 @@
             this.panel3.Size = new System.Drawing.Size(1189, 740);
             this.panel3.TabIndex = 2;
             // 
+            // incomeForm1
+            // 
+            this.incomeForm1.Location = new System.Drawing.Point(0, 0);
+            this.incomeForm1.Name = "incomeForm1";
+            this.incomeForm1.Size = new System.Drawing.Size(1189, 740);
+            this.incomeForm1.TabIndex = 1;
+            // 
             // categoryForm1
             // 
             this.categoryForm1.Location = new System.Drawing.Point(0, 0);
@@ -231,12 +240,12 @@
             this.categoryForm1.Size = new System.Drawing.Size(1189, 740);
             this.categoryForm1.TabIndex = 0;
             // 
-            // incomeForm1
+            // expensesForm1
             // 
-            this.incomeForm1.Location = new System.Drawing.Point(0, 0);
-            this.incomeForm1.Name = "incomeForm1";
-            this.incomeForm1.Size = new System.Drawing.Size(1189, 740);
-            this.incomeForm1.TabIndex = 1;
+            this.expensesForm1.Location = new System.Drawing.Point(0, 0);
+            this.expensesForm1.Name = "expensesForm1";
+            this.expensesForm1.Size = new System.Drawing.Size(1189, 740);
+            this.expensesForm1.TabIndex = 2;
             // 
             // MainForm
             // 
@@ -278,5 +287,6 @@
         private System.Windows.Forms.Panel panel3;
         private CategoryForm categoryForm1;
         private IncomeForm incomeForm1;
+        private ExpensesForm expensesForm1;
     }
 }

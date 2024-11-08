@@ -60,6 +60,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1141, 321);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
@@ -70,6 +71,7 @@
             this.label1.Size = new System.Drawing.Size(190, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Список доходов";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel2
             // 
@@ -92,6 +94,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1141, 321);
             this.panel2.TabIndex = 1;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // income_clearBtn
             // 
@@ -167,6 +170,7 @@
             this.income_date.Name = "income_date";
             this.income_date.Size = new System.Drawing.Size(200, 20);
             this.income_date.TabIndex = 10;
+            this.income_date.ValueChanged += new System.EventHandler(this.income_date_ValueChanged);
             // 
             // label6
             // 
@@ -177,6 +181,7 @@
             this.label6.Size = new System.Drawing.Size(50, 19);
             this.label6.TabIndex = 9;
             this.label6.Text = "Дата:";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // income_description
             // 
@@ -186,6 +191,7 @@
             this.income_description.Name = "income_description";
             this.income_description.Size = new System.Drawing.Size(535, 73);
             this.income_description.TabIndex = 8;
+            this.income_description.TextChanged += new System.EventHandler(this.income_description_TextChanged);
             // 
             // label5
             // 
@@ -196,6 +202,7 @@
             this.label5.Size = new System.Drawing.Size(86, 19);
             this.label5.TabIndex = 7;
             this.label5.Text = "Описание:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // income_income
             // 
@@ -204,6 +211,7 @@
             this.income_income.Name = "income_income";
             this.income_income.Size = new System.Drawing.Size(163, 26);
             this.income_income.TabIndex = 6;
+            this.income_income.TextChanged += new System.EventHandler(this.income_income_TextChanged);
             // 
             // label4
             // 
@@ -214,6 +222,7 @@
             this.label4.Size = new System.Drawing.Size(61, 19);
             this.label4.TabIndex = 5;
             this.label4.Text = "Доход:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // income_item
             // 
@@ -222,6 +231,7 @@
             this.income_item.Name = "income_item";
             this.income_item.Size = new System.Drawing.Size(163, 26);
             this.income_item.TabIndex = 4;
+            this.income_item.TextChanged += new System.EventHandler(this.income_item_TextChanged);
             // 
             // label3
             // 
@@ -232,6 +242,7 @@
             this.label3.Size = new System.Drawing.Size(78, 19);
             this.label3.TabIndex = 3;
             this.label3.Text = "Предмет:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // income_category
             // 
@@ -241,6 +252,7 @@
             this.income_category.Name = "income_category";
             this.income_category.Size = new System.Drawing.Size(163, 28);
             this.income_category.TabIndex = 2;
+            this.income_category.SelectedIndexChanged += new System.EventHandler(this.income_category_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -251,6 +263,7 @@
             this.label2.Size = new System.Drawing.Size(91, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "Категория:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // dataGridView1
             // 
@@ -275,6 +288,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(1098, 260);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // IncomeForm
             // 
