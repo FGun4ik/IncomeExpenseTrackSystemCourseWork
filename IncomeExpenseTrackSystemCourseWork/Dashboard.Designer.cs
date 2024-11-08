@@ -32,42 +32,42 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.income_thisYearIncome = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.income_thisMonthIncome = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.income_yesterdayIncome = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.income_totalIncome = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.expense_thisYear = new System.Windows.Forms.Label();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.expense_thisMonth = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.expense_yesterday = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.expense_today = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -140,7 +140,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.SeaGreen;
             this.panel4.Controls.Add(this.label14);
-            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.income_thisYearIncome);
             this.panel4.Controls.Add(this.pictureBox5);
             this.panel4.Controls.Add(this.pictureBox6);
             this.panel4.Location = new System.Drawing.Point(873, 64);
@@ -159,16 +159,16 @@
             this.label14.TabIndex = 8;
             this.label14.Text = "Доходы за год";
             // 
-            // label6
+            // income_thisYearIncome
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(103, 15);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(25, 25);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "0";
+            this.income_thisYearIncome.AutoSize = true;
+            this.income_thisYearIncome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.income_thisYearIncome.ForeColor = System.Drawing.Color.White;
+            this.income_thisYearIncome.Location = new System.Drawing.Point(103, 15);
+            this.income_thisYearIncome.Name = "income_thisYearIncome";
+            this.income_thisYearIncome.Size = new System.Drawing.Size(25, 25);
+            this.income_thisYearIncome.TabIndex = 7;
+            this.income_thisYearIncome.Text = "0";
             // 
             // pictureBox5
             // 
@@ -190,7 +190,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.SeaGreen;
             this.panel5.Controls.Add(this.label13);
-            this.panel5.Controls.Add(this.label5);
+            this.panel5.Controls.Add(this.income_thisMonthIncome);
             this.panel5.Controls.Add(this.pictureBox3);
             this.panel5.Controls.Add(this.pictureBox4);
             this.panel5.Location = new System.Drawing.Point(590, 64);
@@ -210,16 +210,16 @@
             this.label13.TabIndex = 8;
             this.label13.Text = "Доходы за месяц";
             // 
-            // label5
+            // income_thisMonthIncome
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(105, 15);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(25, 25);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "0";
+            this.income_thisMonthIncome.AutoSize = true;
+            this.income_thisMonthIncome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.income_thisMonthIncome.ForeColor = System.Drawing.Color.White;
+            this.income_thisMonthIncome.Location = new System.Drawing.Point(105, 15);
+            this.income_thisMonthIncome.Name = "income_thisMonthIncome";
+            this.income_thisMonthIncome.Size = new System.Drawing.Size(25, 25);
+            this.income_thisMonthIncome.TabIndex = 7;
+            this.income_thisMonthIncome.Text = "0";
             // 
             // pictureBox3
             // 
@@ -241,7 +241,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.SeaGreen;
             this.panel3.Controls.Add(this.label12);
-            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.income_yesterdayIncome);
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Location = new System.Drawing.Point(311, 64);
             this.panel3.Name = "panel3";
@@ -259,16 +259,16 @@
             this.label12.TabIndex = 8;
             this.label12.Text = "Вчерашние доходы";
             // 
-            // label4
+            // income_yesterdayIncome
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(104, 15);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(25, 25);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "0";
+            this.income_yesterdayIncome.AutoSize = true;
+            this.income_yesterdayIncome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.income_yesterdayIncome.ForeColor = System.Drawing.Color.White;
+            this.income_yesterdayIncome.Location = new System.Drawing.Point(104, 15);
+            this.income_yesterdayIncome.Name = "income_yesterdayIncome";
+            this.income_yesterdayIncome.Size = new System.Drawing.Size(25, 25);
+            this.income_yesterdayIncome.TabIndex = 7;
+            this.income_yesterdayIncome.Text = "0";
             // 
             // pictureBox2
             // 
@@ -283,7 +283,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.SeaGreen;
             this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.income_totalIncome);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Location = new System.Drawing.Point(28, 64);
             this.panel2.Name = "panel2";
@@ -301,16 +301,16 @@
             this.label11.TabIndex = 7;
             this.label11.Text = "Сегодняшние доходы";
             // 
-            // label3
+            // income_totalIncome
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(93, 15);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(25, 25);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "0";
+            this.income_totalIncome.AutoSize = true;
+            this.income_totalIncome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.income_totalIncome.ForeColor = System.Drawing.Color.White;
+            this.income_totalIncome.Location = new System.Drawing.Point(93, 15);
+            this.income_totalIncome.Name = "income_totalIncome";
+            this.income_totalIncome.Size = new System.Drawing.Size(25, 25);
+            this.income_totalIncome.TabIndex = 6;
+            this.income_totalIncome.Text = "0";
             // 
             // pictureBox1
             // 
@@ -347,7 +347,7 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.SeaGreen;
             this.panel7.Controls.Add(this.label18);
-            this.panel7.Controls.Add(this.label10);
+            this.panel7.Controls.Add(this.expense_thisYear);
             this.panel7.Controls.Add(this.pictureBox13);
             this.panel7.Controls.Add(this.pictureBox14);
             this.panel7.Location = new System.Drawing.Point(873, 64);
@@ -366,16 +366,16 @@
             this.label18.TabIndex = 8;
             this.label18.Text = "Расходы за год";
             // 
-            // label10
+            // expense_thisYear
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(103, 15);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(25, 25);
-            this.label10.TabIndex = 7;
-            this.label10.Text = "0";
+            this.expense_thisYear.AutoSize = true;
+            this.expense_thisYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.expense_thisYear.ForeColor = System.Drawing.Color.White;
+            this.expense_thisYear.Location = new System.Drawing.Point(103, 15);
+            this.expense_thisYear.Name = "expense_thisYear";
+            this.expense_thisYear.Size = new System.Drawing.Size(25, 25);
+            this.expense_thisYear.TabIndex = 7;
+            this.expense_thisYear.Text = "0";
             // 
             // pictureBox13
             // 
@@ -397,7 +397,7 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.SeaGreen;
             this.panel8.Controls.Add(this.label17);
-            this.panel8.Controls.Add(this.label9);
+            this.panel8.Controls.Add(this.expense_thisMonth);
             this.panel8.Controls.Add(this.pictureBox11);
             this.panel8.Controls.Add(this.pictureBox12);
             this.panel8.Location = new System.Drawing.Point(590, 64);
@@ -416,16 +416,16 @@
             this.label17.TabIndex = 8;
             this.label17.Text = "Расходы за месяц";
             // 
-            // label9
+            // expense_thisMonth
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(105, 15);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(25, 25);
-            this.label9.TabIndex = 7;
-            this.label9.Text = "0";
+            this.expense_thisMonth.AutoSize = true;
+            this.expense_thisMonth.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.expense_thisMonth.ForeColor = System.Drawing.Color.White;
+            this.expense_thisMonth.Location = new System.Drawing.Point(105, 15);
+            this.expense_thisMonth.Name = "expense_thisMonth";
+            this.expense_thisMonth.Size = new System.Drawing.Size(25, 25);
+            this.expense_thisMonth.TabIndex = 7;
+            this.expense_thisMonth.Text = "0";
             // 
             // pictureBox11
             // 
@@ -447,7 +447,7 @@
             // 
             this.panel9.BackColor = System.Drawing.Color.SeaGreen;
             this.panel9.Controls.Add(this.label16);
-            this.panel9.Controls.Add(this.label8);
+            this.panel9.Controls.Add(this.expense_yesterday);
             this.panel9.Controls.Add(this.pictureBox9);
             this.panel9.Controls.Add(this.pictureBox10);
             this.panel9.Location = new System.Drawing.Point(311, 64);
@@ -466,16 +466,16 @@
             this.label16.TabIndex = 8;
             this.label16.Text = "Вчерашние расходы";
             // 
-            // label8
+            // expense_yesterday
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(104, 15);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(25, 25);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "0";
+            this.expense_yesterday.AutoSize = true;
+            this.expense_yesterday.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.expense_yesterday.ForeColor = System.Drawing.Color.White;
+            this.expense_yesterday.Location = new System.Drawing.Point(104, 15);
+            this.expense_yesterday.Name = "expense_yesterday";
+            this.expense_yesterday.Size = new System.Drawing.Size(25, 25);
+            this.expense_yesterday.TabIndex = 7;
+            this.expense_yesterday.Text = "0";
             // 
             // pictureBox9
             // 
@@ -497,7 +497,7 @@
             // 
             this.panel10.BackColor = System.Drawing.Color.SeaGreen;
             this.panel10.Controls.Add(this.label15);
-            this.panel10.Controls.Add(this.label7);
+            this.panel10.Controls.Add(this.expense_today);
             this.panel10.Controls.Add(this.pictureBox7);
             this.panel10.Controls.Add(this.pictureBox8);
             this.panel10.Location = new System.Drawing.Point(28, 64);
@@ -517,16 +517,16 @@
             this.label15.Text = "Сегодняшние расходы";
             this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
-            // label7
+            // expense_today
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(93, 15);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(25, 25);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "0";
+            this.expense_today.AutoSize = true;
+            this.expense_today.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.expense_today.ForeColor = System.Drawing.Color.White;
+            this.expense_today.Location = new System.Drawing.Point(93, 15);
+            this.expense_today.Name = "expense_today";
+            this.expense_today.Size = new System.Drawing.Size(25, 25);
+            this.expense_today.TabIndex = 7;
+            this.expense_today.Text = "0";
             // 
             // pictureBox7
             // 
@@ -722,20 +722,20 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label income_thisYearIncome;
+        private System.Windows.Forms.Label income_thisMonthIncome;
+        private System.Windows.Forms.Label income_yesterdayIncome;
+        private System.Windows.Forms.Label income_totalIncome;
+        private System.Windows.Forms.Label expense_thisYear;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label expense_thisMonth;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label expense_yesterday;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label expense_today;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;

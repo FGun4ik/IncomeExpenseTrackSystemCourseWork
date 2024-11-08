@@ -53,5 +53,38 @@ namespace IncomeExpenseTrackSystemCourseWork
                 this.Hide();
             }
         }
+
+        private void dashboard_btn_Click(object sender, EventArgs e)
+        {
+            dashboard1.Visible = true;
+            categoryForm1.Visible = false;
+            incomeForm1.Visible = false;
+            expensesForm1.Visible = false;
+
+        }
+
+        private void addCategory_btn_Click(object sender, EventArgs e)
+        {
+            dashboard1.Visible = false;
+            categoryForm1.Visible = true;
+            incomeForm1.Visible = false;
+            expensesForm1.Visible = false;
+        }
+
+        private void income_btn_Click(object sender, EventArgs e)
+        {
+            dashboard1.Visible = false;
+            categoryForm1.Visible = false;
+            incomeForm1.Visible = true;
+            expensesForm1.Visible = false;
+        }
+
+        private void expenses_btn_Click(object sender, EventArgs e)
+        {
+            dashboard1.Visible = false;
+            categoryForm1.Visible = false;
+            incomeForm1.Visible = false;
+            expensesForm1.Visible = true;
+        }
     }
 }

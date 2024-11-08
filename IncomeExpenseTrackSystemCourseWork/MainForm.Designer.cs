@@ -42,9 +42,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.expensesForm1 = new IncomeExpenseTrackSystemCourseWork.ExpensesForm();
             this.incomeForm1 = new IncomeExpenseTrackSystemCourseWork.IncomeForm();
             this.categoryForm1 = new IncomeExpenseTrackSystemCourseWork.CategoryForm();
-            this.expensesForm1 = new IncomeExpenseTrackSystemCourseWork.ExpensesForm();
+            this.dashboard1 = new IncomeExpenseTrackSystemCourseWork.Dashboard();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -146,6 +147,7 @@
             this.expenses_btn.TabIndex = 5;
             this.expenses_btn.Text = "Расходы";
             this.expenses_btn.UseVisualStyleBackColor = false;
+            this.expenses_btn.Click += new System.EventHandler(this.expenses_btn_Click);
             // 
             // income_btn
             // 
@@ -162,6 +164,7 @@
             this.income_btn.TabIndex = 4;
             this.income_btn.Text = "Доходы";
             this.income_btn.UseVisualStyleBackColor = false;
+            this.income_btn.Click += new System.EventHandler(this.income_btn_Click);
             // 
             // addCategory_btn
             // 
@@ -178,6 +181,7 @@
             this.addCategory_btn.TabIndex = 3;
             this.addCategory_btn.Text = "Добавить категорию";
             this.addCategory_btn.UseVisualStyleBackColor = false;
+            this.addCategory_btn.Click += new System.EventHandler(this.addCategory_btn_Click);
             // 
             // dashboard_btn
             // 
@@ -194,6 +198,7 @@
             this.dashboard_btn.TabIndex = 2;
             this.dashboard_btn.Text = "Панель индикаторов";
             this.dashboard_btn.UseVisualStyleBackColor = false;
+            this.dashboard_btn.Click += new System.EventHandler(this.dashboard_btn_Click);
             // 
             // label2
             // 
@@ -217,6 +222,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.dashboard1);
             this.panel3.Controls.Add(this.expensesForm1);
             this.panel3.Controls.Add(this.incomeForm1);
             this.panel3.Controls.Add(this.categoryForm1);
@@ -225,6 +231,13 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1189, 740);
             this.panel3.TabIndex = 2;
+            // 
+            // expensesForm1
+            // 
+            this.expensesForm1.Location = new System.Drawing.Point(0, 0);
+            this.expensesForm1.Name = "expensesForm1";
+            this.expensesForm1.Size = new System.Drawing.Size(1189, 740);
+            this.expensesForm1.TabIndex = 2;
             // 
             // incomeForm1
             // 
@@ -240,12 +253,12 @@
             this.categoryForm1.Size = new System.Drawing.Size(1189, 740);
             this.categoryForm1.TabIndex = 0;
             // 
-            // expensesForm1
+            // dashboard1
             // 
-            this.expensesForm1.Location = new System.Drawing.Point(0, 0);
-            this.expensesForm1.Name = "expensesForm1";
-            this.expensesForm1.Size = new System.Drawing.Size(1189, 740);
-            this.expensesForm1.TabIndex = 2;
+            this.dashboard1.Location = new System.Drawing.Point(0, 0);
+            this.dashboard1.Name = "dashboard1";
+            this.dashboard1.Size = new System.Drawing.Size(1189, 740);
+            this.dashboard1.TabIndex = 3;
             // 
             // MainForm
             // 
@@ -288,5 +301,6 @@
         private CategoryForm categoryForm1;
         private IncomeForm incomeForm1;
         private ExpensesForm expensesForm1;
+        private Dashboard dashboard1;
     }
 }
