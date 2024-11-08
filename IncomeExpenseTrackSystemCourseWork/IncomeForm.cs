@@ -42,7 +42,7 @@ namespace IncomeExpenseTrackSystemCourseWork
 
                 using(SqlCommand cmd = new SqlCommand(selectData, connect))
                 {
-                    cmd.Parameters.AddWithValue("@type", "Income");
+                    cmd.Parameters.AddWithValue("@type", "Incomes");
                     cmd.Parameters.AddWithValue("@status", "Active");
 
                     income_category.Items.Clear();
