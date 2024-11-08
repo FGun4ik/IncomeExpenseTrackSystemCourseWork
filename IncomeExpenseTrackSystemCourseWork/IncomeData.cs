@@ -41,7 +41,7 @@ namespace IncomeExpenseTrackSystemCourseWork
                         iData.Item = reader["item"].ToString();
                         iData.Cost = reader["income"].ToString();
                         iData.Description = reader["description"].ToString();
-                        iData.DateIncome = ((DateTime)reader["date_income"]).ToString("MM-dd-yyyy");
+                        iData.DateIncome = ((DateTime)reader["date_income"]).ToString("dd-MM-yyyy");
 
 
                         listData.Add(iData);
