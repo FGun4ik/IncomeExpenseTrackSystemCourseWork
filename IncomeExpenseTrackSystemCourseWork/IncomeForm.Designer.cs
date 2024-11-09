@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -98,7 +98,7 @@
             // 
             // income_clearBtn
             // 
-            this.income_clearBtn.BackColor = System.Drawing.Color.SeaGreen;
+            this.income_clearBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.income_clearBtn.FlatAppearance.BorderSize = 0;
             this.income_clearBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
             this.income_clearBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
@@ -115,7 +115,7 @@
             // 
             // income_deleteBtn
             // 
-            this.income_deleteBtn.BackColor = System.Drawing.Color.SeaGreen;
+            this.income_deleteBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.income_deleteBtn.FlatAppearance.BorderSize = 0;
             this.income_deleteBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
             this.income_deleteBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
@@ -132,7 +132,7 @@
             // 
             // income_updateBtn
             // 
-            this.income_updateBtn.BackColor = System.Drawing.Color.SeaGreen;
+            this.income_updateBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.income_updateBtn.FlatAppearance.BorderSize = 0;
             this.income_updateBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
             this.income_updateBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
@@ -149,7 +149,7 @@
             // 
             // income_addBtn
             // 
-            this.income_addBtn.BackColor = System.Drawing.Color.SeaGreen;
+            this.income_addBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.income_addBtn.FlatAppearance.BorderSize = 0;
             this.income_addBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
             this.income_addBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
@@ -271,14 +271,14 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.Location = new System.Drawing.Point(46, 60);

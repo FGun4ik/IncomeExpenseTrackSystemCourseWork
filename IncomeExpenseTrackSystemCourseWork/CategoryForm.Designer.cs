@@ -67,7 +67,7 @@
             // 
             // category_deleteBtn
             // 
-            this.category_deleteBtn.BackColor = System.Drawing.Color.SeaGreen;
+            this.category_deleteBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.category_deleteBtn.FlatAppearance.BorderSize = 0;
             this.category_deleteBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
             this.category_deleteBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
@@ -84,7 +84,7 @@
             // 
             // category_clearBtn
             // 
-            this.category_clearBtn.BackColor = System.Drawing.Color.SeaGreen;
+            this.category_clearBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.category_clearBtn.FlatAppearance.BorderSize = 0;
             this.category_clearBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
             this.category_clearBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
@@ -101,7 +101,7 @@
             // 
             // category_updateBtn
             // 
-            this.category_updateBtn.BackColor = System.Drawing.Color.SeaGreen;
+            this.category_updateBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.category_updateBtn.FlatAppearance.BorderSize = 0;
             this.category_updateBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
             this.category_updateBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
@@ -118,7 +118,7 @@
             // 
             // category_addBtn
             // 
-            this.category_addBtn.BackColor = System.Drawing.Color.SeaGreen;
+            this.category_addBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.category_addBtn.FlatAppearance.BorderSize = 0;
             this.category_addBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
             this.category_addBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;

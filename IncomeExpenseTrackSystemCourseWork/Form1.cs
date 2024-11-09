@@ -100,5 +100,10 @@ namespace IncomeExpenseTrackSystemCourseWork
         {
             login_password.PasswordChar = (login_showPass.Checked) ? '\0' : '*';
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

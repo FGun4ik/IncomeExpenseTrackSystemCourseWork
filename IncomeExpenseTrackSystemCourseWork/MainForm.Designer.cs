@@ -100,7 +100,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(121)))), ((int)(((byte)(84)))));
+            this.panel2.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.panel2.Controls.Add(this.logout_btn);
             this.panel2.Controls.Add(this.expenses_btn);
             this.panel2.Controls.Add(this.income_btn);
@@ -117,7 +117,7 @@
             // 
             // logout_btn
             // 
-            this.logout_btn.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.logout_btn.BackColor = System.Drawing.Color.MediumPurple;
             this.logout_btn.FlatAppearance.BorderSize = 0;
             this.logout_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logout_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -134,7 +134,7 @@
             // 
             // expenses_btn
             // 
-            this.expenses_btn.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.expenses_btn.BackColor = System.Drawing.Color.MediumPurple;
             this.expenses_btn.FlatAppearance.BorderSize = 0;
             this.expenses_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.expenses_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -151,7 +151,7 @@
             // 
             // income_btn
             // 
-            this.income_btn.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.income_btn.BackColor = System.Drawing.Color.MediumPurple;
             this.income_btn.FlatAppearance.BorderSize = 0;
             this.income_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.income_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -168,7 +168,7 @@
             // 
             // addCategory_btn
             // 
-            this.addCategory_btn.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.addCategory_btn.BackColor = System.Drawing.Color.MediumPurple;
             this.addCategory_btn.FlatAppearance.BorderSize = 0;
             this.addCategory_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addCategory_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -185,7 +185,7 @@
             // 
             // dashboard_btn
             // 
-            this.dashboard_btn.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.dashboard_btn.BackColor = System.Drawing.Color.MediumPurple;
             this.dashboard_btn.FlatAppearance.BorderSize = 0;
             this.dashboard_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dashboard_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));

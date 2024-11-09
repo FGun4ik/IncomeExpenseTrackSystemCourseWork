@@ -139,7 +139,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.SeaGreen;
+            this.panel4.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.panel4.Controls.Add(this.label14);
             this.panel4.Controls.Add(this.income_thisYearIncome);
             this.panel4.Controls.Add(this.pictureBox5);
@@ -190,7 +190,7 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.SeaGreen;
+            this.panel5.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.panel5.Controls.Add(this.label13);
             this.panel5.Controls.Add(this.income_thisMonthIncome);
             this.panel5.Controls.Add(this.pictureBox3);
@@ -242,7 +242,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.SeaGreen;
+            this.panel3.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.panel3.Controls.Add(this.label12);
             this.panel3.Controls.Add(this.income_yesterdayIncome);
             this.panel3.Controls.Add(this.pictureBox2);
@@ -285,7 +285,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.SeaGreen;
+            this.panel2.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.income_totalIncome);
             this.panel2.Controls.Add(this.pictureBox1);
@@ -350,7 +350,7 @@
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.SeaGreen;
+            this.panel7.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.panel7.Controls.Add(this.label18);
             this.panel7.Controls.Add(this.expense_thisYear);
             this.panel7.Controls.Add(this.pictureBox13);
@@ -401,7 +401,7 @@
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.SeaGreen;
+            this.panel8.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.panel8.Controls.Add(this.label17);
             this.panel8.Controls.Add(this.expense_thisMonth);
             this.panel8.Controls.Add(this.pictureBox11);
@@ -452,7 +452,7 @@
             // 
             // panel9
             // 
-            this.panel9.BackColor = System.Drawing.Color.SeaGreen;
+            this.panel9.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.panel9.Controls.Add(this.label16);
             this.panel9.Controls.Add(this.expense_yesterday);
             this.panel9.Controls.Add(this.pictureBox9);
@@ -503,7 +503,7 @@
             // 
             // panel10
             // 
-            this.panel10.BackColor = System.Drawing.Color.SeaGreen;
+            this.panel10.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.panel10.Controls.Add(this.label15);
             this.panel10.Controls.Add(this.expense_today);
             this.panel10.Controls.Add(this.pictureBox7);
@@ -574,7 +574,7 @@
             // 
             // panel13
             // 
-            this.panel13.BackColor = System.Drawing.Color.SeaGreen;
+            this.panel13.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.panel13.Controls.Add(this.totalIncome);
             this.panel13.Controls.Add(this.pictureBox15);
             this.panel13.Location = new System.Drawing.Point(12, 47);
@@ -623,7 +623,7 @@
             // 
             // panel14
             // 
-            this.panel14.BackColor = System.Drawing.Color.SeaGreen;
+            this.panel14.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.panel14.Controls.Add(this.totalExpenses);
             this.panel14.Controls.Add(this.pictureBox16);
             this.panel14.Location = new System.Drawing.Point(16, 47);
